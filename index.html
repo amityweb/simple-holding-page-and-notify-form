@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lte IE 7 ]><html lang="en-GB" class="nojs ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en-GB" class="nojs ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en-GB" class="nojs ie9"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en-gb" class="nojs"><!--<![endif]-->
+<head>
+	<title>Website Title</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="Website Description" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1" />
+	<meta name="robots" content="noindex, nofollow, noodp, noydir" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+	<script src="js/jquery.form.js"></script> 
+	<script src="js/doc.ready.js"></script> 
+	<script type="text/javascript">(function(B,C){B[C]=B[C].replace(/\bnojs\b/,'js')})(document.documentElement,'className');</script>
+
+</head>
+
+<body class="home">
+
+	<div id="content">
+		
+		<img src="images/holding-image.jpg" alt="" width="990" height="605"/>
+
+		<a href="#form" class="form-link closed"></a>
+		
+		<div id="footer-text">
+		
+			Contact us:<br/>
+
+			<div id="footer-text-left">
+				+44 (0)1234 56789<br/>
+				<a href="mailto:your@email.com">your@email.com</a>
+			</div>
+			
+			<div id="footer-text-right">
+				Your Address
+			</div>
+
+		</div>
+		
+	</div>
+	
+    <div id="form">
+	    
+		<a href="#" class="form-close"></a>
+		
+	    <span class="form-heading">Notify me when the site is live</span>
+	    
+		<form action="submitemail.php" method="post" id="email-form">
+		
+			<p>
+				<label>Name:</label>
+				<input type="text" name="name" class="textbox" value="" />
+			</p>
+			<p>		
+				<label>Email:</label>
+				<input type="text" name="email" class="textbox" value="" />
+			</p>
+			<p>	
+				<label>Enter the security code:</label><br/>
+				<img src="/captcha/captcha.php">
+				<input type="text" name="code" class="textbox">
+			</p>
+			<p>	
+				<input type="submit" class="submit" name="submit" value="Submit" />
+			</p>
+		
+		</form>
+		
+		<div id="error"></div>
+
+	</div>
+	
+<div id="overlay"></div>
+
+</body>
+</html>

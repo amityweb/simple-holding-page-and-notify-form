@@ -1,0 +1,203 @@
+/******************
+RESET
+******************/
+/* General */
+body { font-size: 13px; line-height: 1.6em; letter-spacing: 0.05em; -webkit-text-size-adjust: 100%;}
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,font,img,strong,b,u,i,ul,ol,li,address,blockquote,iframe{border:0;margin:0;padding:0;}
+address{font-style:normal;}
+li{list-style:none;}
+body,p,li,h1,h2,h3,h4,h5,h6,a{font-family:verdana, sans-serif;}
+/* HTML5 */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+audio:not([controls]){display:none;}
+[hidden]{display:none;}
+/* Forms */
+form{margin:0;}
+fieldset{border: 0px;margin:0;padding:0px;}
+legend{font-size: 1.5em;padding:0 5px;}
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;}
+button,input,label,select,textarea{display: inline-block;}
+label{line-height:2em;}
+button,input{line-height:normal;}
+button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+textarea{overflow:auto;vertical-align:top;resize:vertical;width:100%;}
+/* Tables */
+table{border-collapse:collapse;border-spacing:0;padding:5px;}
+th,td{padding:2px 5px;border:1px solid #999;}
+
+/****************************************************
+Reset Elements in Content back to default
+*****************************************************/
+
+#content p { margin: 0px 0px 10px 0px;}
+#content ul, #content ol { padding: 1.12em 1.5em }
+#content li { padding-left: 0.1em; list-style: disc; }
+#content ol li { list-style:decimal }
+
+body
+{
+	background: #67686b;
+}
+		
+	#content
+	{
+		overflow: hidden;
+		width: 990px;
+		margin: 30px auto 0px auto;
+		position: relative;
+		z-index: 100;
+	}
+
+	/* FOOTER TEXT */
+	
+	#footer-text
+	{
+		position: absolute;
+		right: 28px;
+		bottom: 35px;
+		width: 425px;
+		height: 60px;
+		color: #ffffff;
+		font-size: 0.85em;
+		line-height: 2em;
+	}
+	
+		#footer-text-left, #footer-text-right
+		{
+			float: left;
+			width: 43%;
+			line-height: 1.2em;
+		}
+	
+		#footer-text-right
+		{
+			width: 57%;
+		}
+	
+	#footer-text a
+	{
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	.ie7 #footer-text,
+	.ie8 #footer-text
+	{
+		font-size: 0.8em;
+	}
+				
+#error
+{
+
+	clear: both;
+}
+
+/* FORM */
+
+.form-link
+{
+	position: absolute;
+
+	left: 522px;
+	bottom: 122px;
+	
+	width: 140px;
+	height: 21px;
+	z-index: 500;
+}
+
+	.form-link
+	{
+		background: url(../images/trans.gif); /* IE Hack! */
+	}
+
+#form
+{
+	background: #F99B20;
+	width: 225px;
+	z-index: 100;
+	border: 1px transparent;
+	text-align: left;
+	padding: 20px;
+	color: #ffffff;
+	z-index: 999;
+	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	
+	behavior: url(/assets/css/PIE.htc);
+	position: relative;
+}
+
+	input[type="text"]
+	{
+		display: block;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border: 1px solid #ACE;
+		margin: 0 0 5px;
+		padding: 5px;
+		width: 203px;
+	}
+	
+.form-close
+{
+	float: right;
+	width: 24px;
+	height: 22px;
+	background: url(../images/close.png) no-repeat;
+	margin: -15px -15px 0px 0px;
+}
+
+.nojs #form
+{
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+.js #form
+{
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	margin-left: -125px;
+}	
+
+.js .form-heading,
+.nojs .form-close,
+.nojs #overlay
+{
+	display: none;
+}
+
+/* OVERLAY */
+
+#overlay
+{
+	background: #000000;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 5;
+	-khtml-opacity: 5;
+	opacity: 0;
+}
+	.ie8 #overlay
+	{
+		background: none;
+	}
+
+
+
+
+
+
+
