@@ -128,7 +128,7 @@ body
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	
-	behavior: url(/assets/css/PIE.htc);
+	behavior: url(/css/PIE.htc);
 	position: relative;
 }
 
