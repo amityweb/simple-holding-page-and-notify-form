@@ -108,7 +108,7 @@ body
 	z-index: 500;
 }
 
-	.form-link
+	.ie .form-link
 	{
 		background: url(../images/trans.gif); /* IE Hack! */
 	}
